@@ -1,0 +1,78 @@
+/* -------- FONDO GENERAL -------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff6bcb22, #7b5bff22, #4dd4ff22);
+}
+
+/* -------- HEADER -------- */
+.header {
+  background: linear-gradient(135deg, #7b5bff, #4dd4ff);
+  padding: 20px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+  color: white;
+}
+
+.user-info span {
+  background: #ffffff33;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* -------- BOTONES -------- */
+.btn-logout,
+.btn-back,
+.btn-add {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn-back { background: #7b5bff; }
+.btn-add { background: #4dd4ff; }
+.btn-logout { background: #ff6bcb; }
+
+.btn-logout:hover,
+.btn-back:hover,
+.btn-add:hover {
+  transform: scale(1.08);
+}
+
+/* -------- TARJETAS DEL ESCRITORIO -------- */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.card-icon {
+  font-size: 45px;
+  background: #ff6bcb33;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* -------- INFO DE SESIÓN -------- */
+.session-info {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,73 @@
+/* -------- TARJETAS DE STATS -------- */
+.stat-card {
+  background: linear-gradient(135deg, #ff6bcb, #7b5bff);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+.stat-card h3 {
+  font-size: 32px;
+}
+
+/* -------- TABLA -------- */
+.tabla-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.tabla-usuarios th {
+  background: #7b5bff;
+  color: white;
+  padding: 12px;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge-admin { background: #ff6bcb; }
+.badge-usuario { background: #4dd4ff; }
+.badge-json { background: #7b5bff; }
+.badge-local { background: #ffb347; }
+
+/* -------- MODAL -------- */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #ffffffee;
+  padding: 30px;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.3);
+  animation: pop 0.35s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.btn-cancelar { background: #ff6bcb; }
+.btn-guardar { background: #7b5bff; }
+
+.btn-cancelar:hover,
+.btn-guardar:hover {
+  transform: scale(1.05);
+}

@@ -1,1 +1,98 @@
-body{font-family:Arial;background:#f2f2f2;padding-top:40px;text-align:center;}
+/* --------- GENERAL --------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff6bcb, #7b5bff, #4dd4ff);
+  background-size: 200% 200%;
+  animation: gradientMove 8s infinite alternate ease-in-out;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+@keyframes gradientMove {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+/* --------- LOGIN BOX --------- */
+.login-box {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 380px;
+  animation: fadeUp 0.6s ease-out;
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+  color: #7b5bff;
+}
+
+/* --------- FORM --------- */
+.input-group {
+  margin-top: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #7b5bff;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ffb3e6;
+  border-radius: 10px;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #ff6bcb;
+  box-shadow: 0 0 8px #ff6bcb;
+}
+
+/* --------- BOTÓN --------- */
+button {
+  width: 100%;
+  background: linear-gradient(135deg, #ff6bcb, #ffb347);
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* --------- MENSAJES --------- */
+.mensaje {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.mensaje.exito { color: #26c281; }
+.mensaje.error { color: #e74c3c; }
+
+/* --------- LINK --------- */
+.registro-link a {
+  color: #7b5bff;
+  font-weight: bold;
+}

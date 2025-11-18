@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #4dd4ff, #7b5bff, #ff6bcb);
+  background-size: 200%;
+  animation: gradientMove 8s infinite alternate;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradientMove {
+  from { background-position: left; }
+  to { background-position: right; }
+}
+
+.registro-box {
+  background: #ffffffdd;
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px);
+}
+
+h1 {
+  color: #7b5bff;
+  text-align: center;
+}
+
+/* Inputs */
+.input-group label {
+  font-weight: bold;
+  color: #7b5bff;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #ffb3e6;
+  margin-top: 5px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #ff6bcb;
+  box-shadow: 0 0 10px #ff6bcb;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ffb347, #ff6bcb);
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+.mensaje.exito { color: green; }
+.mensaje.error { color: red; }
